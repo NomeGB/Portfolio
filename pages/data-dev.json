@@ -108,7 +108,7 @@
                 { "type": "spacer", "size": "sm" },
                 { "type": "divider"},
                 { "type": "spacer", "size": "md" },
-                { "type": "image",  "src": "Assets/Media/uevconfig.png" },
+                { "type": "image",  "src": "/Portfolio/Assets/Media/uevconfig.png" },
                 { "type": "text",   "value": "These are some of the DefualtEngine.ini configurations I used for those examples above:" },
                 { "type": "text",   "value": "-Changed the 'tonemapper' gamma and disabled default auto exposure to get a brighter output and prevent the exposure from adjusting automatically." },
                 { "type": "text",   "value": "-Changed volumetric lighting configs to get a better dynamic result." },
