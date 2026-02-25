@@ -41,7 +41,7 @@
             "tags":     ["Animation"],
             "subtitle": "FNaF Jaze Cinema music video · 2021",
             "large":    false,
-            "thumb":    "Portfolio/Assets/Media/jaze.jpg",
+            "thumb":    "/Portfolio/Assets/Media/jaze.jpg",
             "content": [
                 { "type": "text",  "value": "This is a FNaF music video of 'Riddle' by 'Bad Computer' for which I was commissioned. (2021)" },
                 { "type": "spacer", "size": "sm" },
@@ -52,9 +52,9 @@
                 { "type": "divider"},
                 { "type": "spacer", "size": "sm" },
                 { "type": "text",  "value": "These are some BTS media that I luckily found for the video, since it's a 5-year-old work most of the BTS is lost media nowadays." },
-                { "type": "image",  "src": "Portfolio/Assets/Media/jaze01.jpg" },
-                { "type": "video",  "src": "Portfolio/Assets/Media/jaze02.mp4" },
-                { "type": "video",  "src": "Portfolio/Assets/Media/jaze03.mp4" }
+                { "type": "image",  "src": "/Portfolio/Assets/Media/jaze01.jpg" },
+                { "type": "video",  "src": "/Portfolio/Assets/Media/jaze02.mp4" },
+                { "type": "video",  "src": "/Portfolio/Assets/Media/jaze03.mp4" }
             ]
         }
     ]

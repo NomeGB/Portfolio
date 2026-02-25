@@ -179,7 +179,7 @@ const items = [
         name:         "Contact",
         cameraPos:    new THREE.Vector3(-110, -70, 180),
         cameraTarget: new THREE.Vector3(-172, -90, 75),
-        destination:  "Portfolio/contact/",
+        destination:  "/Portfolio/contact/",
         object:       null,
         anchor:       null
     },
@@ -187,7 +187,7 @@ const items = [
         name:         "3D work",
         cameraPos:    new THREE.Vector3(-40, -50, -200),
         cameraTarget: new THREE.Vector3(0, -60, -130),
-        destination:  "Portfolio/3d/",
+        destination:  "/Portfolio/3d/",
         object:       null,
         anchor:       null
     },
@@ -195,7 +195,7 @@ const items = [
         name:         "Game developement",
         cameraPos:    new THREE.Vector3(140, -50, 120),
         cameraTarget: new THREE.Vector3(120, -10, 100),
-        destination:  "Portfolio/dev/",
+        destination:  "/Portfolio/dev/",
         object:       null,
         anchor:       null
     },
@@ -203,7 +203,7 @@ const items = [
         name:         "Visual media",
         cameraPos:    new THREE.Vector3(-70, 150, -60),
         cameraTarget: new THREE.Vector3(-30, 125.5, -20),
-        destination:  "Portfolio/media/",
+        destination:  "/Portfolio/media/",
         object:       null,
         anchor:       null
     }
