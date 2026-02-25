@@ -354,7 +354,7 @@ loader.load(
 // ─── Stars ────────────────────────────────────────────────────────────────────
 
 loader.load(
-    `Assets/3d/stars.gltf`,
+    `Assets/3d/Stars.gltf`,
     function (gltf) {
 
         gltf.scene.traverse(child => {
@@ -378,7 +378,7 @@ loader.load(
 // ─── Moon ────────────────────────────────────────────────────────────────────
 
 loader.load(
-    `Assets/3d/scene.gltf`,
+    `Assets/3d/Scene.gltf`,
     function (gltf) {
         moonObject = gltf.scene;
         moonObject.scale.set(1.25, 1.25, 1.25);
@@ -426,7 +426,7 @@ loader.load(
 // ─── Flag ────────────────────────────────────────────────────────────────────
 
 loader.load(
-    `Assets/3d/Flag.gltf`,
+    `Assets/3d/flag.gltf`,
     function (gltf) {
         flagObject = gltf.scene;
         flagObject.scale.set(1.25, 1.25, 1.25);
