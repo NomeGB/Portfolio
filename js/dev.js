@@ -1,6 +1,6 @@
 // ─────────────────────────────────────────────────────────────
 // json
-const DATA_URL = './pages/data-dev.json'; 
+const DATA_URL = 'Portfolio/pages/data-dev.json'; 
 // ─────────────────────────────────────────────────────────────
 
 let PAGE_CONFIG = null;
