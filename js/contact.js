@@ -1,5 +1,5 @@
 // ─── Load json info ──────────────────────────────────────────────────────────
-fetch('Portfolio/pages/data-contact.json')
+fetch('/Portfolio/pages/data-contact.json')
   .then(res => res.json())
   .then(data => {
     const contactList = document.getElementById('contactList');

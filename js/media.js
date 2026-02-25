@@ -1,6 +1,6 @@
 // ─────────────────────────────────────────────────────────────
 // json
-const DATA_URL = 'Portfolio/pages/data-media.json'; 
+const DATA_URL = '/Portfolio/pages/data-media.json'; 
 // ─────────────────────────────────────────────────────────────
 
 let PAGE_CONFIG = null;
