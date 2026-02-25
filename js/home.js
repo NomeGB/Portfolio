@@ -907,6 +907,7 @@ window.addEventListener("pageshow", function (event) {
                 document.getElementById('introTransition').remove();
             }
         }
+        requestAnimationFrame(animateIris);
     }
 });
 
