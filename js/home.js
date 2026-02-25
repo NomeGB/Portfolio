@@ -888,26 +888,7 @@ window.addEventListener('load', () => {
 
 window.addEventListener("pageshow", function (event) {
     if (event.persisted) {
-        const circle = document.getElementById('irisCircle');
-        const maxR   = Math.hypot(window.innerWidth, window.innerHeight);
-
-        circle.setAttribute('r', 0);
-
-        const start    = performance.now();
-        const duration = 1200;
-
-        function animateIris(now) {
-            const t     = Math.min((now - start) / duration, 1);
-            const eased = t < 0.5 ? 2*t*t : -1+(4-2*t)*t;
-            circle.setAttribute('r', eased * maxR);
-
-            if (t < 1) {
-                requestAnimationFrame(animateIris);
-            } else {
-                document.getElementById('introTransition').remove();
-            }
-        }
-        requestAnimationFrame(animateIris);
+        window.location.reload();
     }
 });
 
