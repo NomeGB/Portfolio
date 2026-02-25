@@ -1,0 +1,61 @@
+{
+    "_readme": {
+        "description": "Portfolio data file. One JSON per section page. The HTML reads this file automatically via the DATA_URL variable.",
+        "fields": {
+            "title":    "Big title shown on hero and sticky header",
+            "subtitle": "Small text shown below the title on load",
+            "tags":     "Array of filter tags. Always keep 'All' as the first one.",
+            "items":    "Array of portfolio pieces shown as tiles in the grid"
+        },
+        "item_fields": {
+            "name":     "Title of the piece, shown on tile hover and in the viewer",
+            "tags":     "Array of tags for this piece. Must match values defined in the top-level tags array",
+            "subtitle": "Small text shown only inside the viewer (e.g. engine, year)",
+            "large":    "Optional. Set to true to make the tile span 2 columns",
+            "thumb":    "Path to the thumbnail image shown in the grid tile",
+            "content":  "Array of content blocks shown inside the viewer, in the order you define them"
+        },
+        "content_block_types": {
+            "image":   "{ type: 'image', src: 'path/to/image.jpg' }  — displays a full-width image",
+            "video":   "{ type: 'video', src: 'path/to/video.mp4' }  — displays a video player",
+            "text":    "{ type: 'text',  value: 'Your text here...' } — paragraph of descriptive text",
+            "spacer":  "{ type: 'spacer', size: 'sm' | 'md' | 'lg' } — vertical blank space between blocks",
+            "divider": "{ type: 'divider' }                           — thin horizontal line separator"
+        },
+        "notes": [
+            "You can mix and combine as many content blocks as you want inside each item",
+            "The first image or video in content is used as thumbnail if 'thumb' is not set",
+            "Supported image formats: jpg, png, webp, gif",
+            "Supported video formats: mp4, webm",
+            "To create a new section page, duplicate portfolio-page.html and change DATA_URL to point to this file"
+        ]
+    },
+
+    "title":    "3D work",
+    "subtitle": "Hard surface · Texturing · Animation",
+    "tags": ["All", "Animation", "Texture", "Modelling"],
+
+    "items": [
+        {
+            "name":     "Music video commission",
+            "tags":     ["Animation"],
+            "subtitle": "FNaF Jaze Cinema music video · 2021",
+            "large":    false,
+            "thumb":    "Assets/Media/jaze.jpg",
+            "content": [
+                { "type": "text",  "value": "This is a FNaF music video of 'Riddle' by 'Bad Computer' for which I was commissioned. (2021)" },
+                { "type": "spacer", "size": "sm" },
+                { "type": "divider"},
+                { "type": "spacer", "size": "sm" },
+                { "type": "yt",  "src": "https://youtu.be/UlzpUKU5NGk" },
+                { "type": "spacer", "size": "sm" },
+                { "type": "divider"},
+                { "type": "spacer", "size": "sm" },
+                { "type": "text",  "value": "These are some BTS media that I luckily found for the video, since it's a 5-year-old work most of the BTS is lost media nowadays." },
+                { "type": "image",  "src": "Assets/Media/jaze01.jpg" },
+                { "type": "video",  "src": "Assets/Media/jaze02.mp4" },
+                { "type": "video",  "src": "Assets/Media/jaze03.mp4" }
+            ]
+        }
+    ]
+}
