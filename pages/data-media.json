@@ -41,15 +41,15 @@
             "tags":     ["Photography", "Abandoned"],
             "subtitle": "Urbex · 2026",
             "large":    true,
-            "thumb":    "/Portfolio/Assets/Media/Mutua06.jpg",
+            "thumb":    "./Assets/Media/Mutua06.jpg",
             "content": [
                 { "type": "text",   "value": "Photos edited using Lightroom Classic of an abandoned health clinic in the middle of the forest. This is part of my occasional 'Urbex' expeditions, which I consider a hobby." },
-                { "type": "image",  "src": "/Portfolio/Assets/Media/Mutua06.jpg" },
-                { "type": "image",  "src": "/Portfolio/Assets/Media/Mutua05.jpg" },
-                { "type": "image",  "src": "/Portfolio/Assets/Media/Mutua04.jpg" },
-                { "type": "image",  "src": "/Portfolio/Assets/Media/Mutua03.jpg" },
-                { "type": "image",  "src": "/Portfolio/Assets/Media/Mutua02.jpg" },
-                { "type": "image",  "src": "/Portfolio/Assets/Media/Mutua01.jpg" },
+                { "type": "image",  "src": "./Assets/Media/Mutua06.jpg" },
+                { "type": "image",  "src": "./Assets/Media/Mutua05.jpg" },
+                { "type": "image",  "src": "./Assets/Media/Mutua04.jpg" },
+                { "type": "image",  "src": "./Assets/Media/Mutua03.jpg" },
+                { "type": "image",  "src": "./Assets/Media/Mutua02.jpg" },
+                { "type": "image",  "src": "./Assets/Media/Mutua01.jpg" },
                 { "type": "spacer", "size": "lg" }
             ]
         },
@@ -58,13 +58,13 @@
             "tags":     ["Photography", "Abandoned"],
             "subtitle": "Urbex · 2026",
             "large":    false,
-            "thumb":    "/Portfolio/Assets/Media/Bobila03.jpg",
+            "thumb":    "./Assets/Media/Bobila03.jpg",
             "content": [
                 { "type": "text",   "value": "Photos edited using Lightroom Classic of an abandoned bricks factory. This is another one of my 'Urbex' expeditions, which I consider a hobby but helps me with inspiration and references, particularly this one since it's an industrial site." },
-                { "type": "image",  "src": "/Portfolio/Assets/Media/Bobila01.jpg" },
-                { "type": "image",  "src": "/Portfolio/Assets/Media/Bobila02.jpg" },
-                { "type": "image",  "src": "/Portfolio/Assets/Media/Bobila03.jpg" },
-                { "type": "image",  "src": "/Portfolio/Assets/Media/Bobila04.jpg" },
+                { "type": "image",  "src": "./Assets/Media/Bobila01.jpg" },
+                { "type": "image",  "src": "./Assets/Media/Bobila02.jpg" },
+                { "type": "image",  "src": "./Assets/Media/Bobila03.jpg" },
+                { "type": "image",  "src": "./Assets/Media/Bobila04.jpg" },
                 { "type": "spacer", "size": "lg" }
             ]
         }

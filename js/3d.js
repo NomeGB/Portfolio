@@ -1,6 +1,6 @@
 // ─────────────────────────────────────────────────────────────
 // json
-const DATA_URL = '/Portfolio/pages/data-3d.json'; 
+const DATA_URL = './pages/data-3d.json'; 
 // ─────────────────────────────────────────────────────────────
 
 let PAGE_CONFIG = null;
