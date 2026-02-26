@@ -486,6 +486,8 @@ body::-webkit-scrollbar { display: none; }
       font-size: 1.7em;
   }
 
+/* ───────────── media loading ───────────── */
+
 .media-wrapper {
     position: relative;
 }
@@ -498,6 +500,18 @@ body::-webkit-scrollbar { display: none; }
     animation: shimmer 1.5s infinite;
     border-radius: 4px;
     min-height: 200px;
+}
+
+.media-loading-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255,255,255,0.4);
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    text-align: center;
+    pointer-events: none;
 }
 
 @keyframes shimmer {

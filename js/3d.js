@@ -188,7 +188,9 @@ function openViewer(idx) {
         if (block.type === 'image') {
             el.classList.add('media-wrapper');
             el.innerHTML = `
-                <div class="media-skeleton"></div>
+                <div class="media-skeleton">
+                    <span class="media-loading-text">Loading image, please wait...</span>
+                </div>
                 <img src="${block.src}" alt="" style="opacity:0" 
                     onload="this.previousElementSibling.remove(); this.style.opacity='1'">
             `;
@@ -196,7 +198,9 @@ function openViewer(idx) {
         else if (block.type === 'video') {
             el.classList.add('media-wrapper');
             el.innerHTML = `
-                <div class="media-skeleton"></div>
+                <div class="media-skeleton">
+                    <span class="media-loading-text">Loading video, this may take a moment...</span>
+                </div>
                 <video src="${block.src}" controls playsinline style="opacity:0"
                     onloadeddata="this.previousElementSibling.remove(); this.style.opacity='1'"></video>
             `;
