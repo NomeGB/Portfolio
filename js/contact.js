@@ -1,5 +1,5 @@
 // ─── Load json info ──────────────────────────────────────────────────────────
-fetch('./pages/data-contact.json')
+fetch('/pages/data-contact.json')
   .then(res => res.json())
   .then(data => {
     const contactList = document.getElementById('contactList');
