@@ -185,8 +185,22 @@ function openViewer(idx) {
     item.content.forEach(block => {
         const el = document.createElement('div');
         el.className = 'vBlock';
-        if      (block.type === 'image')   el.innerHTML = `<img src="${block.src}" alt="">`;
-        else if (block.type === 'video')   el.innerHTML = `<video src="${block.src}" controls playsinline></video>`;
+        if (block.type === 'image') {
+            el.classList.add('media-wrapper');
+            el.innerHTML = `
+                <div class="media-skeleton"></div>
+                <img src="${block.src}" alt="" style="opacity:0" 
+                    onload="this.previousElementSibling.remove(); this.style.opacity='1'">
+            `;
+        }
+        else if (block.type === 'video') {
+            el.classList.add('media-wrapper');
+            el.innerHTML = `
+                <div class="media-skeleton"></div>
+                <video src="${block.src}" controls playsinline style="opacity:0"
+                    onloadeddata="this.previousElementSibling.remove(); this.style.opacity='1'"></video>
+            `;
+        }
         else if (block.type === 'text')    { el.classList.add('text'); el.textContent = block.value; }
         else if (block.type === 'spacer')  el.classList.add(`spacer-${block.size||'md'}`);
         else if (block.type === 'divider') el.classList.add('divider');

@@ -486,6 +486,29 @@ body::-webkit-scrollbar { display: none; }
       font-size: 1.7em;
   }
 
+.media-wrapper {
+    position: relative;
+}
+
+.media-skeleton {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #1a1a2e 25%, #2a2a3e 50%, #1a1a2e 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 4px;
+    min-height: 200px;
+}
+
+@keyframes shimmer {
+    0%   { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+img, video {
+    transition: opacity 0.3s ease;
+}
+
 /* ───────────── mobile ───────────── */
 @media (max-width: 900px) {
   #viewer { flex-direction: column; }
