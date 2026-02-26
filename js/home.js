@@ -632,7 +632,7 @@ controls.staticMoving         = false;
 const targetLightPos = new THREE.Vector3();
 
 
-// ─── Travel dialog ────────────────────────────────────────────────────────────
+// ─── Travel dialog ───────────────────────────────────────────────────────────
 
 function showTravelDialog() {
     const dialog = document.getElementById('travelDialog');
