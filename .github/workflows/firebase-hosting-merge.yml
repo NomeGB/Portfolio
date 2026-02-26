@@ -17,3 +17,4 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_ALANESPADASPORTFOLIO }}
           channelId: live
           projectId: alanespadasportfolio
+          target: alanespadasportfolio

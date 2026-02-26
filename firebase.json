@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "alanespadasportfolio",
     "public": ".",
     "ignore": [
       "firebase.json",
