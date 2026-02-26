@@ -187,7 +187,7 @@ const items = [
         name:         "3D work",
         cameraPos:    new THREE.Vector3(-40, -50, -200),
         cameraTarget: new THREE.Vector3(0, -60, -130),
-        destination:  "/3d/",
+        destination:  "/3d/", //is it even changing bro???
         object:       null,
         anchor:       null
     },
