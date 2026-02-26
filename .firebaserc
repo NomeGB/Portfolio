@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "portfolio-85f56"
-  }
+    "default": "portfolio-85f56",
+    "portfolio": "alanespadasportfolio"
+  },
+  "targets": {},
+  "etags": {}
 }
