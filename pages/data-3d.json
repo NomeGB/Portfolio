@@ -118,7 +118,7 @@
             "tags":     ["Texturing"],
             "subtitle": "Chaos at Fazbear's materials work · 2023-2026",
             "large":    false,
-            "thumb":    "/Assets/Media/mats.png",
+            "thumb":    "/Assets/Media/matss.png",
             "content": [
                 { "type": "text",  "value": "Some of the materials i worked on for CAF (Chaos at Fazbear's)." },
                 { "type": "spacer", "size": "sm" },
