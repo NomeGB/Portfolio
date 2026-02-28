@@ -108,7 +108,7 @@
                 { "type": "spacer", "size": "sm" },
                 { "type": "divider"},
                 { "type": "spacer", "size": "sm" },
-                { "type": "text",  "value": "Information point model." },
+                { "type": "text",  "value": "Industrial elevator model (door and cranes rigged)." },
                 { "type": "image",  "src": "/Assets/Media/cafprops/mdl10.png" }
                 
             ]
