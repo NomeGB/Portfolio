@@ -224,7 +224,7 @@ function closeViewer() {
     const right  = document.getElementById('viewerRight');
 
     viewer.classList.remove('open');
-    right.classList.remove('open'); // ← importante para móvil
+    right.classList.remove('open');
 
     document.querySelectorAll('#viewerLeft video').forEach(v => {
         v.pause();
