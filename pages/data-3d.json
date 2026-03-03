@@ -156,7 +156,13 @@
                 { "type": "divider"},
                 { "type": "spacer", "size": "sm" },
                 { "type": "text",  "value": "Brick wall material, mostly used using vertex painting as a background layer." },
-                { "type": "image",  "src": "/Assets/Media/Mat08.png" }
+                { "type": "image",  "src": "/Assets/Media/Mat08.png" },
+                { "type": "spacer", "size": "sm" },
+                { "type": "divider"},
+                { "type": "spacer", "size": "sm" },
+                { "type": "text",  "value": "Normal metal and rusty metal material." },
+                { "type": "image",  "src": "/Assets/Media/Mat09.png" },
+                { "type": "image",  "src": "/Assets/Media/Mat10.png" }
             ]
         },
         {
