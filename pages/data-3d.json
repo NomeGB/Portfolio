@@ -162,7 +162,11 @@
                 { "type": "spacer", "size": "sm" },
                 { "type": "text",  "value": "Normal metal and rusty metal material." },
                 { "type": "image",  "src": "/Assets/Media/Mat09.png" },
-                { "type": "image",  "src": "/Assets/Media/Mat10.png" }
+                { "type": "image",  "src": "/Assets/Media/Mat10.png" },
+                { "type": "divider"},
+                { "type": "spacer", "size": "sm" },
+                { "type": "text",  "value": "Office ceiling." },
+                { "type": "image",  "src": "/Assets/Media/Mat11.png" }
             ]
         },
         {
