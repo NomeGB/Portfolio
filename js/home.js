@@ -726,8 +726,16 @@ function updateLabels() {
 
 // ─── Tick loop ────────────────────────────────────────────────────────────────
 
+let lastTime = performance.now();
+
 function animate() {
     requestAnimationFrame(animate);
+
+    const now = performance.now();
+    const delta = Math.min((now - lastTime) / 1000, 0.1);
+    lastTime = now;
+
+    const lerpFactor = (alpha) => 1 - Math.pow(1 - alpha, delta * 60);
 
     // Nebula always looking at cam
     scene.children.forEach(child => {
@@ -738,10 +746,10 @@ function animate() {
 
     // Group autorotation
     if (autoRotate) {
-        sceneGroup.rotation.y = (sceneGroup.rotation.y + 0.0002) % (Math.PI * 2);
+        sceneGroup.rotation.y = (sceneGroup.rotation.y + 0.0002 * delta * 60) % (Math.PI * 2);
         if (sateliteObject) {
-            sateliteObject.rotation.x -= 0.0003;
-            sateliteObject.rotation.y -= 0.0001;
+            sateliteObject.rotation.x -= 0.0003 * delta * 60;
+            sateliteObject.rotation.y -= 0.0001 * delta * 60;
         }
     }
 
@@ -762,16 +770,16 @@ function animate() {
     // ── Zoom transition towards an item ───────────────────────────────────────
     if (isZoomed && activeItem) {
 
-        sceneGroup.rotation.x += (defaultSceneRot.x - sceneGroup.rotation.x) * 0.02;
-        sceneGroup.rotation.y += (defaultSceneRot.y - sceneGroup.rotation.y) * 0.02;
-        sceneGroup.rotation.z += (defaultSceneRot.z - sceneGroup.rotation.z) * 0.02;
+        sceneGroup.rotation.x += (defaultSceneRot.x - sceneGroup.rotation.x) * lerpFactor(0.02);
+        sceneGroup.rotation.y += (defaultSceneRot.y - sceneGroup.rotation.y) * lerpFactor(0.02);
+        sceneGroup.rotation.z += (defaultSceneRot.z - sceneGroup.rotation.z) * lerpFactor(0.02);
 
-        sateliteObject.rotation.x += (defaultSateliteRot.x - sateliteObject.rotation.x) * 0.07;
-        sateliteObject.rotation.y += (defaultSateliteRot.y - sateliteObject.rotation.y) * 0.07;
-        sateliteObject.rotation.z += (defaultSateliteRot.z - sateliteObject.rotation.z) * 0.07;
+        sateliteObject.rotation.x += (defaultSateliteRot.x - sateliteObject.rotation.x) * lerpFactor(0.07);
+        sateliteObject.rotation.y += (defaultSateliteRot.y - sateliteObject.rotation.y) * lerpFactor(0.07);
+        sateliteObject.rotation.z += (defaultSateliteRot.z - sateliteObject.rotation.z) * lerpFactor(0.07);
 
-        camera.position.lerp(activeItem.cameraPos,    0.025);
-        controls.target.lerp(activeItem.cameraTarget, 0.025);
+        camera.position.lerp(activeItem.cameraPos,    lerpFactor(0.025));
+        controls.target.lerp(activeItem.cameraTarget, lerpFactor(0.025));
 
         if (camera.position.distanceTo(activeItem.cameraPos) < 5) {
             showTravelDialog();
@@ -780,13 +788,11 @@ function animate() {
     // ── Return transition to default position ─────────────────────────────────
     } else if (isReturning) {
 
-        returningProgress = Math.min(returningProgress + 0.008, 1);
+        returningProgress = Math.min(returningProgress + 0.008 * delta * 60, 1);
 
         if (returningPhase === 0) {
 
-            returningProgress = Math.min(returningProgress + 0.008, 1);
             const easeIn = returningProgress * returningProgress * returningProgress;
-
             camera.position.lerpVectors(returnStartPos, returnMidpoint, easeIn);
 
             if (returningProgress >= 1) {
@@ -798,11 +804,9 @@ function animate() {
 
         } else {
 
-            returningProgress = Math.min(returningProgress + 0.008, 1);
             const easeOut = 1 - Math.pow(1 - returningProgress, 2);
-
             camera.position.lerpVectors(returnStartPos, defaultCameraPos, easeOut);
-            controls.target.lerp(defaultCameraTarget, 0.08);
+            controls.target.lerp(defaultCameraTarget, lerpFactor(0.08));
 
             if (returningProgress >= 1) {
                 camera.position.copy(defaultCameraPos);
@@ -817,7 +821,7 @@ function animate() {
 
     // Light follows cam smoothly
     const desiredPos = camera.position.clone().add(lightOffset);
-    targetLightPos.lerp(desiredPos, 0.05);
+    targetLightPos.lerp(desiredPos, lerpFactor(0.05));
     topLight.position.copy(targetLightPos);
     topLight.lookAt(scene.position);
 
