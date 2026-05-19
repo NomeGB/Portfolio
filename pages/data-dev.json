@@ -37,6 +37,27 @@
 
     "items": [
         {
+            "name":     "Hello my name is Eddie",
+            "tags":     ["Programming", "Game design", "Rendering"],
+            "subtitle": "Personal singleplayer · 2026-????",
+            "large":    false,
+            "thumb":    "/Assets/Media/EddieIcon.png",
+            "content": [
+                { "type": "text",   "value": "This is a project I'm still working on. It's a kind of simulator where you work at a VTuber managing office, but things can turn around very fast." },
+                { "type": "text",   "value": "For this project I decided to use a modified version of Unreal Engine 4.27, the Vite fork. It helps a lot with performance and physics since it uses PhysX instead of Chaos Physics, and adds a lot of global illumination, rendering and general plugins that help with the development of the project. Currently the game runs at 170-200 FPS limited." },
+                { "type": "spacer", "size": "lg" },
+                { "type": "divider"},
+                { "type": "spacer", "size": "lg" },
+                { "type": "text",   "value": "Player character:" },
+                { "type": "spacer", "size": "sm" },
+                { "type": "text",   "value": "The player character for the game uses a base class made in C++, including basic functions such as a predefined skeleton, movement, interactions, restrictions and some built-in functions such as playing cutscenes directly on the player skeleton (for better blending between cutscene and gameplay), auto-moving the player to a location, and a turn-in-place system." },
+                { "type": "video",  "src": "/Assets/Media/eddie01.mp4" },
+                { "type": "image",  "src": "/Assets/Media/Eddie01.png" },
+                { "type": "image",  "src": "/Assets/Media/Eddie02.png" },
+                { "type": "image",  "src": "/Assets/Media/Eddie03.png" }            
+            ]
+        },
+        {
             "name":     "Deep core",
             "tags":     ["Programming", "Game design"],
             "subtitle": "Personal multiplayer project · 2025",
