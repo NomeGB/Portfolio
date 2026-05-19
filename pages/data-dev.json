@@ -88,7 +88,7 @@
             "large":    false,
             "thumb":    "/Assets/Media/bodycam.png",
             "content": [
-                { "type": "text",   "value": "This project started mostly because of my curiosity of seeing what kind of result I could get doing this kind of camera effects + what kind of non-generic mechanics I could fit into it to make it a little more fun." },
+                { "type": "text",   "value": "This project started mostly because of my curiosity of seeing what kind of result I could get doing this kind of camera effects + what kind of non-generic mechanics I could fit into it to make it a little more fun and also beacuse I got the opportunity to work with a small team with it." },
                 { "type": "spacer", "size": "sm" },
                 { "type": "divider"},
                 { "type": "spacer", "size": "sm" },
