@@ -43,7 +43,8 @@
             "large":    true,
             "thumb":    "/Assets/Media/CafThumb.png",
             "content": [
-                { "type": "text",   "value": "This page is still WIP :(" }
+                { "type": "text",   "value": "This page is still WIP :(" },
+                { "type": "text",   "value": "You can still check the game release on it's page: gamejolt.com/games/CAF/997065" }
             ]
         },
         {
